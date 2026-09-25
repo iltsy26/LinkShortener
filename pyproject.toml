@@ -15,6 +15,10 @@ dependencies = [
 [tool.poetry]
 packages = [{include = "linkshortener", from = "src"}]
 
+[tool.poetry.scripts]
+app = "linkshortener.main:start"
+
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
